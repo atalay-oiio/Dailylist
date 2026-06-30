@@ -151,16 +151,17 @@ h1 {
     background-color: #dc2626;
 }
 
-@media (max-width : 480px) {
-    .todo-card {
-        padding: 28px;
-    }
+/* Desktop */
+.element {
+  width: 400px;
+  font-size: 18px;
+}
 
-    .input-row {
-        flex-direction: column;
-    }
-
-    #btn {
-        width: 100%;
-    }
+/* Mobile */
+@media (max-width: 768px) {
+  .element {
+    width: 100%;
+    font-size: 16px;
+    padding: 16px;
+  }
 }
