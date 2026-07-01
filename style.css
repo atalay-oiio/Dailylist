@@ -151,62 +151,75 @@ h1 {
     background-color: #dc2626;
 }
 
-// mobile //
+
 @media (max-width: 768px) {
 
     body {
         padding: 15px;
+        align-items: flex-start;
     }
 
     .todo-card {
+        width: 100%;
         max-width: 100%;
-        padding: 16px;
-        border-radius: 15px;
+        padding: 18px;
+        border-radius: 18px;
     }
 
     h1 {
-        font-size: 28px;
+        font-size: 38px;
+        line-height: 1.2;
     }
 
     .subtitle {
-        font-size: 13px;
+        font-size: 18px;
+        margin-bottom: 20px;
     }
 
+    /
     .input-row {
+        display: flex;
         flex-direction: column;
+        gap: 12px;
     }
 
     #input {
         width: 100%;
-        font-size: 16px;
+        font-size: 18px;
+        padding: 15px;
     }
 
     #btn {
         width: 100%;
-        padding: 14px;
-        font-size: 16px;
+        padding: 15px;
+        font-size: 18px;
     }
 
+    
     #taskList li {
         flex-direction: column;
         align-items: flex-start;
-        gap: 12px;
+        gap: 15px;
+        padding: 16px;
     }
 
+    .task-text {
+        width: 100%;
+        font-size: 18px;
+        word-break: break-word;
+    }
+
+    /
     .btn-container {
         width: 100%;
         display: flex;
-        gap: 8px;
+        gap: 10px;
     }
 
     .complete-btn,
     .delet-btn {
         flex: 1;
-        padding: 12px;
-        font-size: 15px;
-    }
-
-    .task-text {
-        word-break: break-word;
+        padding: 14px;
+        font-size: 16px;
     }
 }
